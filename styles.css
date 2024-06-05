@@ -1,0 +1,818 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0f3f3; /* Cambia el valor hexadecimal por el color deseado */
+}
+
+header {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color de texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos para el segundo párrafo */
+header p {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-family: 'Your Desired Font', sans-serif; /* Cambia 'Your Desired Font' por la fuente deseada */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos específicos para la imagen de portada */
+.portada {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según sea necesario */
+    background-image: url('portada.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.portada h1 {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo {
+    text-align: center; /* Centramos el título */
+    margin-top: 0; /* Eliminamos el margen superior */
+}
+
+
+/* Estilos para la sección de Resultados */
+#resultados {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#resultados h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagen {
+    margin: 10px;
+    position: relative;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagen:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.overlay a:hover {
+    background-color: #555;
+}
+
+.boton-anterior,
+.boton-siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-anterior:hover,
+.boton-siguiente:hover {
+    background-color: #555;
+}
+
+/* Estilos para el menú */
+nav {
+    text-align: center; /* Centra los elementos del menú */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px; /* Tamaño de la letra del menú */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f8f8f8; /* Color de fondo */
+    transition: background-color 0.3s ease; /* Transición de color al pasar el cursor */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Estilos para la sección de Servicios Destacados */
+#servicios-destacados {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#servicios-destacados h2 {
+    margin-bottom: 20px;
+}
+
+.servicio {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.servicio h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.servicio p {
+    color: #666;
+}
+
+.servicio ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.servicio ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.servicio a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.servicio a:hover {
+    background-color: #555;
+}
+
+/* Estilos para la sección de Ofertas */
+#ofertas {
+    padding: 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.oferta {
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 40px);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.oferta:hover {
+    transform: translateY(-5px);
+}
+
+.oferta h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centrar el texto */
+    word-wrap: break-word; /* Ajustar el texto dentro del contenedor */
+}
+
+.oferta p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+.sticker {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.oferta1 {
+    background-color: #fde2e2;
+    border: 2px solid #ff7f50;
+    color: #333;
+}
+
+.oferta1:hover {
+    background-color: #ff7f50;
+    color: #fff;
+}
+
+.oferta-especial {
+    position: relative;
+    background-color: #ffd700; /* Color de fondo amarillo */
+    border: 4px solid #ff1493; /* Borde rosa */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto 30px; /* Centra horizontalmente */
+    max-width: 600px; /* Ajusta el ancho máximo */
+    text-align: center; /* Centra el texto */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para el sticker grande */
+.sticker-grande {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff1493; /* Color de fondo rosa */
+    color: #fff;
+    padding: 10px 20px; /* Ajusta el tamaño del sticker */
+    border-radius: 30px; /* Hace que el sticker sea redondeado */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Servicios Destacados */
+    .servicio {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    /* Ofertas */
+    #ofertas {
+        padding: 20px;
+    }
+
+    .oferta {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .oferta-especial {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Servicios Destacados */
+    .servicio {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    /* Ofertas */
+    #ofertas {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oferta {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .oferta-especial {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sticker-grande {
+        top: -20px;
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+/* Ajustes para la galería de resultados */
+#resultados {
+    padding: 20px;
+}
+
+#resultados h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galeria .imagen {
+    position: relative;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+.galeria .imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.galeria .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+}
+
+.galeria .imagen:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .galeria .imagen {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria .imagen {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para los recuadros de las ofertas */
+.ofertas-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente al tamaño del contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.oferta {
+    background-color: #e0f7fa; /* Color de fondo azul claro */
+    border: 2px solid #26c6da; /* Borde azul */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 20px;
+    margin: 20px; /* Ajusta el margen entre los elementos */
+    max-width: calc(50% - 40px); /* Ancho máximo */
+    text-align: center; /* Centra el contenido */
+    flex: 1; /* Hace que los elementos se ajusten al ancho disponible */
+}
+
+/* Estilos para el cuadro "Aumento de Mamas" */
+.oferta:nth-of-type(9) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* Estilos para el recuadro especial de "Precios de Campaña" */
+.oferta-especial {
+    background-color: #ffd700; /* Color de fondo amarillo */
+    border: 4px solid #ff1493; /* Borde rosa */
+    border-radius: 20px; /* Borde redondeado */
+    padding: 20px;
+    margin: 20px auto; /* Centra horizontalmente */
+    max-width: 600px; /* Ancho máximo */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilos para los stickers */
+.sticker-grande {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff1493; /* Color de fondo rosa */
+    color: #fff;
+    padding: 10px 20px; /* Ajusta el tamaño del sticker */
+    border-radius: 30px; /* Borde redondeado */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold;
+}
+
+/* Estilos para los recuadros de los procedimientos */
+.procedimientos-container {
+    display: flex; /* Utiliza flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.procedimiento {
+    background-color: #e0f7fa; /* Color de fondo azul claro */
+    border: 2px solid #26c6da; /* Borde azul */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 20px;
+    max-width: calc(33.33% - 40px); /* Ancho máximo */
+    text-align: center; /* Centra el contenido */
+    flex: 1; /* Hace que los elementos se ajusten al ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilos para el título de procedimientos */
+.titulo-procedimientos {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.titulo-procedimientos h2 {
+    font-size: 28px; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilos para el contenedor de las ofertas */
+.ofertas-container {
+    display: flex; /* Utiliza flexbox */
+    flex-wrap: wrap; /* Permite que las ofertas se envuelvan a la siguiente línea si no caben */
+    justify-content: space-between; /* Distribuye las ofertas horizontalmente, con espacio entre ellas */
+}
+
+/* Estilos para cada oferta */
+.oferta {
+    width: calc(33.33% - 20px); /* Ancho de cada oferta, ajustado al 33.33% del contenedor */
+    margin-bottom: 20px; /* Espacio entre las ofertas */
+}
+
+
+/* Estilos para la sección de Redes Sociales */
+#redes-sociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#redes-sociales ul {
+    padding: 0;
+    list-style: none;
+}
+
+#redes-sociales li {
+    display: inline-block;
+    margin: 0 10px; /* Reducir el margen para mejor ajuste en móviles */
+}
+
+#redes-sociales a {
+    display: inline-block;
+    padding: 10px; /* Reducir padding para mejor ajuste en móviles */
+    border-radius: 50%;
+    background-color: #3b5998; /* Azul de Facebook */
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+#redes-sociales a img {
+    width: 40px; /* Reducir tamaño de iconos para mejor ajuste en móviles */
+    height: 40px;
+}
+
+#redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el formulario de contacto */
+#formulario-contacto {
+    background-color: #000; /* Color de fondo negro */
+    padding: 20px; /* Reducir padding para mejor ajuste en móviles */
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    color: #fff; /* Color del texto blanco */
+    text-align: center; /* Centrar el contenido */
+}
+
+.campo-formulario {
+    margin-bottom: 20px; /* Espacio entre campos */
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%; /* Ancho completo */
+    padding: 12px;
+    border: 2px solid #ddd; /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #333; /* Fondo */
+    color: #fff; /* Color del texto */
+    transition: border-color 0.3s ease; /* Transición suave del color del borde */
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    border-color: #3b5998; /* Cambio de color del borde al enfocar */
+}
+
+.campo-formulario label {
+    display: block;
+    color: #fff; /* Color del texto */
+    font-size: 16px;
+    margin-bottom: 8px; /* Espacio entre etiqueta y campo */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+button[type="submit"] {
+    background-color: #ffdab9; /* Color piel suave */
+    color: #333; /* Color del texto */
+    padding: 14px 40px; /* Ajuste del tamaño del botón */
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave del color de fondo y del efecto de elevación */
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9e80; /* Color piel más claro al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.campo-formulario input,
+.campo-formulario textarea,
+button[type="submit"] {
+    animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#mapa {
+    margin-top: 50px;
+}
+
+#google-map {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Ancho del mapa */
+}
+
+/* Estilos para el recuadro horizontal */
+#info-adicional {
+    display: flex;
+    flex-wrap: wrap; /* Ajuste de flex para mejor responsividad */
+    justify-content: space-around;
+    background-color: rgba(0, 128, 128, 0.5); /* Color de fondo "teal" con una opacidad del 50% */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Añadimos bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregamos una sombra suave */
+    color: #fff; /* Color de texto blanco */
+    font-family: 'Bahnschrift SemiBold', sans-serif; /* Tipo de letra Bahnschrift SemiBold */
+}
+
+.titulo-recuadro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff; /* Color de texto blanco */
+}
+
+.titulo-recuadro p {
+    color: #fff; /* Color de texto blanco */
+    font-size: 18px; /* Tamaño de fuente más grande */
+}
+
+.titulo-principal {
+    text-align: center; /* Centra el título */
+    font-family: 'Gotham', sans-serif; /* Tipo de letra Gotham */
+}
+
+/* NUESTRAS INSTALACIONES */
+#nuestras-instalaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacio superior */
+}
+
+#nuestras-instalaciones .izquierda {
+    flex: 1;
+    padding: 20px; /* Espacio entre el párrafo y la imagen */
+}
+
+#nuestras-instalaciones .derecha {
+    flex: 1;
+    padding: 20px; /* Espacio entre el párrafo y la imagen */
+}
+
+#nuestras-instalaciones h2 {
+    color: #d2b48c; /* Cambiar el color del título */
+    text-align: justify; /* Justificar el texto */
+    font-family: 'Roboto', sans-serif; /* Cambiar el tipo de letra */
+    max-width: 100%; /* Ancho máximo del párrafo */
+    margin: 0; /* Eliminar margen para alineación adecuada */
+}
+
+#nuestras-instalaciones img {
+    max-width: 100%; /* Imagen al máximo del ancho del contenedor */
+    display: block; /* Evitar espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    box-shadow: none; /* Quitar la sombra de la imagen */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    #formulario-contacto {
+        padding: 15px; /* Reducir padding */
+        max-width: 90%; /* Ajustar el ancho máximo */
+    }
+
+    #info-adicional {
+        flex-direction: column; /* Colocar los elementos en columna */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    #info-adicional > div {
+        margin-bottom: 15px; /* Añadir espacio entre elementos */
+    }
+
+    #nuestras-instalaciones {
+        flex-direction: column; /* Colocar los elementos en columna */
+    }
+
+    #nuestras-instalaciones .izquierda,
+    #nuestras-instalaciones .derecha {
+        padding: 0 15px; /* Reducir padding */
+    }
+
+    #nuestras-instalaciones h2 {
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+    }
+
+    #redes-sociales li {
+        margin: 0 10px; /* Reducir el margen */
+    }
+
+    #redes-sociales a img {
+        width: 40px; /* Reducir tamaño de los iconos */
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #formulario-contacto {
+        padding: 10px; /* Reducir padding */
+        max-width: 95%; /* Ajustar el ancho máximo */
+    }
+
+    #info-adicional {
+        padding: 10px; /* Reducir padding */
+    }
+
+    #nuestras-instalaciones .izquierda,
+    #nuestras-instalaciones .derecha {
+        padding: 0 10px; /* Reducir padding */
+    }
+
+    #nuestras-instalaciones h2 {
+        font-size: 18px; /* Reducir el tamaño de la fuente */
+    }
+
+    #redes-sociales a img {
+        width: 30px; /* Reducir tamaño de los iconos */
+        height: 30px;
+    }
+
+    button[type="submit"] {
+        padding: 10px 30px; /* Ajustar tamaño del botón */
+        font-size: 16px; /* Ajustar tamaño de la fuente */
+    }
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 769px) {
+    #nuestras-instalaciones {
+        flex-direction: row; /*
+
