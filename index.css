@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styles */
 header section {
     text-align: center;
     padding: 20px;
@@ -38,6 +39,7 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+/* Main Content Styles */
 .titulo1 {
     background-color: white;
     padding: 40px 20px;
@@ -46,6 +48,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .titulo1 h2 {
@@ -55,6 +58,7 @@ nav ul li a:hover {
     text-align: center;
     border-radius: 4px;
     margin-bottom: 20px;
+    animation: slideDown 0.5s ease-in-out;
 }
 
 .titulo1 h1 {
@@ -64,6 +68,7 @@ nav ul li a:hover {
     margin-top: 20px;
     color: #333;
     position: relative;
+    animation: fadeIn 1s ease-in-out 0.5s;
 }
 
 .titulo1 h1::after {
@@ -79,15 +84,16 @@ nav ul li a:hover {
 
 .titulo1 .content {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
-    gap: 20px; /* Espacio uniforme entre la imagen y el párrafo */
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out 1s;
 }
 
 .titulo1 .content img {
     flex: 1;
-    max-width: 50%; /* Tamaño ajustado de la imagen */
+    max-width: 50%;
     border-radius: 20px;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -97,7 +103,7 @@ nav ul li a:hover {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Ajusta la alineación del párrafo */
+    justify-content: flex-start;
 }
 
 .titulo1 .parrafo1 p {
@@ -106,16 +112,17 @@ nav ul li a:hover {
     color: #333;
     margin: 0;
     padding: 20px;
-    background-color: #e6f7f1; /* Verde menta suave */
+    background-color: #e6f7f1;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 90%; /* Limita el ancho máximo del párrafo */
+    max-width: 90%;
 }
 
 .titulo1 .info {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
+    animation: fadeIn 1s ease-in-out 1.5s;
 }
 
 .titulo1 .info-block {
@@ -123,9 +130,10 @@ nav ul li a:hover {
     min-width: 300px;
     padding: 20px;
     margin: 10px;
-    background-color: #e6f7f1; /* Verde menta suave */
+    background-color: #e6f7f1;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.5s ease-in-out;
 }
 
 .titulo1 h3 {
@@ -142,48 +150,31 @@ nav ul li a:hover {
     color: #333;
     text-align: justify;
     line-height: 1.6;
-    margin: 0 0 20px 0; /* Añade margen inferior a los párrafos */
+    margin: 0 0 20px 0;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideDown {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes slideUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
+/* Procedimientos Section Styles */
 .procedimientos.inicio {
-    font-family: "Myriad Pro", Arial, sans-serif; /* Aplicamos el tipo de letra Myriad Pro */
+    font-family: "Myriad Pro", Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
     background-color: black;
     color: white;
-    padding: 20px;
 }
 
 .informacion {
     flex: 1;
-    padding-right: 20px; /* Espacio entre la información y la lista */
+    padding-right: 20px;
 }
 
 .titulo {
-    text-align: center; /* Centramos el título */
-    margin-top: 0; /* Eliminamos el margen superior */
+    text-align: center;
+    margin-top: 0;
 }
 
 .procedimientos-lista {
     list-style-type: none;
     padding-left: 0;
-    margin: 0;
 }
 
 .procedimientos-lista li {
@@ -196,11 +187,10 @@ nav ul li a:hover {
     width: 20px;
     height: 20px;
     border: 2px solid green;
-    margin-right: 10px; /* Espacio entre el recuadro y el texto */
+    margin-right: 10px;
     cursor: pointer;
 }
 
-/* Cambiar el estilo del checkbox cuando está seleccionado */
 .checkbox.selected {
     background-color: black;
 }
@@ -214,17 +204,16 @@ nav ul li a:hover {
     top: -1px;
 }
 
-/* Ocultar el checkbox de forma predeterminada */
 .checkbox::before {
     content: "";
     display: none;
 }
 
-/* Cambiar la apariencia del checkbox cuando está seleccionado */
 .checkbox.selected::before {
     display: block;
 }
 
+/* Oferta Especial Styles */
 .oferta-especial {
     background-color: #333;
     color: white;
@@ -232,6 +221,7 @@ nav ul li a:hover {
     margin: 20px 0;
     border-radius: 8px;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .sticker-grande {
@@ -243,6 +233,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+/* Galeria Styles */
 #resultados .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -279,12 +270,29 @@ nav ul li a:hover {
     opacity: 1;
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 /* Media Queries */
@@ -303,20 +311,34 @@ footer {
         margin-bottom: 20px;
     }
 
-    .titulo1 .parrafo1 p {
-        max-width: 100%;
+    .titulo1 .parrafo1 {
+        justify-content: center;
     }
 
     .procedimientos.inicio {
         flex-direction: column;
-    }
-
-    .procedimientos-lista {
+        align-items: center;
         text-align: center;
     }
 
-    .procedimientos-lista li {
-        display: inline-block;
-        margin-right: 10px;
+    .informacion {
+        padding-right: 0;
+    }
+
+    .procedimientos-lista {
+        padding: 0;
+    }
+
+    .checkbox {
+        margin: 0 auto 10px auto;
+    }
+
+    #resultados .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #resultados .galeria .imagen {
+        max-width: 100%;
     }
 }
